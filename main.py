@@ -1,13 +1,11 @@
-# Basic star pattern
-print("star pattern\n")
-for i in range(1,6):
-    for j in range(i):
-        print("*" ,end="")
-    print('\n')
+def no_notes(a):
+   Q=[2000,500,200,100,50,20,10]
+   x=0
+   for i in range(7):
+      q = Q[i]
+      x = a//q
+      print("Notes of {} = {}". format(q,x)) 
+      a=a%q
 
-# Inverted star pattern
-print("inverted star pattern\n")
-for i in range(6,1,-1):
-    for j in range(i):
-         print("*" ,end="")
-    print('\n')     
+amount = int(input("Enter total amount"))
+no_notes(amount )
